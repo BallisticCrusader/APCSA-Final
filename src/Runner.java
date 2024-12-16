@@ -71,11 +71,11 @@ public class Runner
 
             if(race.equals("White") || race.equals("white"))
             {
-                price += 5;
+                price += 320;
             }
             else if(race.equals("Black") || race.equals("black"))
             {
-                price += 10;
+                price += 390;
             }
 
             System.out.println("Where does " + name + " live: ");
@@ -86,11 +86,11 @@ public class Runner
 
             if(lives.equals("Fort Collins") || lives.equals("fort collins"))
             {
-                price += 5;
+                price += 310;
             }
             else if(lives.equals("Greeley") || lives.equals("greeley"))
             {
-                price += 10;
+                price += 409;
             }
 
             System.out.print("What is " + name + "'s age: ");
@@ -102,11 +102,11 @@ public class Runner
             }
             else if(age >= 16 && age < 29)
             {
-                price += 10;
+                price += 440;
             }
             else if(age >= 30)
             {
-                price += 5;
+                price += 150;
             }
 
             System.out.println("The Total Cost of " + name + "'s insurance is $" + price);
