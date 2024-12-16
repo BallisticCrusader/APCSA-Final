@@ -7,11 +7,12 @@ public class Runner
     {
         System.out.print("Enter 1 to see example or enter 2 to enter your own person: ");
         int first = input.nextInt();
+        input.nextLine();
         int price = 0;
 
         if (first == 1)
         {
-
+            System.out.println("Not Developed yet");
         }
         else if(first == 2)
         {
@@ -65,6 +66,7 @@ public class Runner
             }
 
             System.out.println("The Total Cost of " + name + "'s insurance is $" + price);
+            input.close();
 
         }
     }
