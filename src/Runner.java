@@ -1,6 +1,13 @@
 import java.util.*;
 public class Runner 
 {
+    Person blake = new Person("Blake", 30, "White", "Fort Collins");
+    Person bob = new Person("Bob", 58, "White", "Greeley");
+    Person robert = new Person("Robert", 24, "White", "Fort Collins");
+    Person tyrone = new Person("Tyrone", 17, "Black", "Greeley");
+    Person darius = new Person("Darius", 21, "Black", "Fort Collins");
+    Person isaiah = new Person("Isaiah", 45, "Black", "Greeley");
+
     Scanner input = new Scanner(System.in);
 
     public void Start()
@@ -12,7 +19,44 @@ public class Runner
 
         if (first == 1)
         {
-            System.out.println("Not Developed yet");
+            System.out.println("Who wold you like to take a look at: ");
+            System.out.println("Blake");
+            System.out.println("Bob");
+            System.out.println("Robert");
+            System.out.println("Tyrone");
+            System.out.println("Darius");
+            System.out.println("Isaiah");
+            System.out.print(": ");
+            String na = input.nextLine();
+
+            if(na.equals("Blake") || na.equals("blake"))
+            {
+                System.out.println(blake);
+            }
+            else if(na.equals("Bob") || na.equals("bob"))
+            {
+                System.out.println(bob);
+            }
+            else if(na.equals("Robert") || na.equals("robert"))
+            {
+                System.out.println(robert);
+            }
+            else if(na.equals("Tyrone") || na.equals("tyrone"))
+            {
+                System.out.println(tyrone);
+            }
+            else if(na.equals("Darius") || na.equals("darius"))
+            {
+                System.out.println(darius);
+            }
+            else if(na.equals("Isaiah") || na.equals("isaiah"))
+            {
+                System.out.println(isaiah);
+            }
+            else
+            {
+                System.out.println("Not Valid Input");
+            }
         }
         else if(first == 2)
         {
